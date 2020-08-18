@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import './antdv'
 
 Vue.config.productionTip = false
 console.log(process.env.NODE_ENV);
