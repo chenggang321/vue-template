@@ -1,0 +1,74 @@
+@import "./var";
+@import "./reset";
+@import "./mixins/clearfix";
+@import "./mixins/ellipsis";
+
+// 重复样式
+.loopStyle(@counter) when (@counter > 0) {
+  .p-@{counter} {
+    padding: (1px * @counter);
+  }
+  .p-t-@{counter} {
+    padding-top: (1px * @counter);
+  }
+  .p-r-@{counter} {
+    padding-right: (1px * @counter);
+  }
+  .p-b-@{counter} {
+    padding-bottom: (1px * @counter);
+  }
+  .p-l-@{counter} {
+    padding-left: (1px * @counter);
+  }
+  .m-@{counter} {
+    margin: (1px * @counter);
+  }
+  .m-t-@{counter} {
+    margin-top: (1px * @counter);
+  }
+  .m-r-@{counter} {
+    margin-right: (1px * @counter);
+  }
+  .m-b-@{counter} {
+    margin-bottom: (1px * @counter);
+  }
+  .m-l-@{counter} {
+    margin-left: (1px * @counter);
+  }
+  .fs-@{counter} {
+    font-size: (1px * @counter);
+  }
+  .width@{counter}{
+    width: 1% * @counter;
+  }
+  .loopStyle((@counter - 1));
+}
+
+.loopStyle(100);
+
+// 浮动
+.f-l {
+  float: left;
+}
+
+.f-r {
+  float: right;
+}
+
+// 清除浮动
+.clearfix {
+  .clearfix();
+}
+
+// 对齐方式
+.t-c {
+  text-align: center !important;
+}
+
+.t-l {
+  text-align: left !important;
+}
+
+.t-r {
+  text-align: right !important;
+}

@@ -1,0 +1,100 @@
+@import "./var";
+
+body {
+  font-family: "PingFang SC","Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  color: #333;
+  font-size: 14px;
+}
+body,
+div,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td,
+s {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+li {
+  list-style: none;
+}
+img {
+  display: inline-block;
+  border: none;
+}
+em {
+  font-style: normal;
+}
+a,
+a:focus,
+a:visited,
+a:link,
+a:hover {
+  outline: none;
+  text-decoration: none;
+}
+a{
+  color: #333;
+}
+a:hover{
+  color: @mColor;
+}
+
+i {
+  vertical-align: middle;
+  font-style: normal;
+}
+i,
+label,
+input[type='checkbox'] {
+  vertical-align: middle;
+}
+input{
+  padding: 10px;
+}
+label {
+  font-weight: normal;
+}
+textarea{
+  resize: none!important;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #999;
+  font-weight: normal;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color: #999;
+  font-weight: normal;
+}
+input::-moz-placeholder, textarea::-moz-placeholder{
+  color: #999;
+  font-weight: normal;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #999;
+  font-weight: normal;
+}

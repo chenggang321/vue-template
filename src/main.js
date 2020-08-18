@@ -3,9 +3,10 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './antdv'
+import '@assets/style/common.less'
 
 Vue.config.productionTip = false
-console.log(process.env.NODE_ENV);
+
 new Vue({
   router,
   store,
